@@ -1,0 +1,31 @@
+:root {
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    
+    --clr-accent-800: hsl(213, 80%, 23%);
+    --clr-accent-700: hsl(235, 46%, 19%);
+    --clr-accent-500: hsl(235, 47%, 40%);
+    --clr-accent-400: hsl(235, 61%, 57%);
+    --clr-accent-300: hsl(235, 63%, 61%);
+
+    --fw-regular: 400;
+    --fw-bold: 700;
+
+    --fs-300: .825rem;
+    --fs-400: 1rem;
+    --fs-900: 2.5rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    background: var(--clr-neutral-800);
+    font-family: "Lexend", sans-serif;
+    font-style: normal;
+}
+
+
+header {
+    height: 4.5rem;
+    background-color: var(--clr-accent-800);
+}
+
