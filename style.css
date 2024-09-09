@@ -7,8 +7,9 @@
     --clr-accent-400: hsl(235, 61%, 57%);
     --clr-accent-300: hsl(235, 63%, 61%);
 
+    --fw-light: 200;
     --fw-regular: 400;
-    --fw-bold: 700;
+    --fw-bold: 600;
 
     --fs-300: .825rem;
     --fs-400: 1rem;
@@ -18,14 +19,83 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    background: var(--clr-neutral-800);
     font-family: "Lexend", sans-serif;
     font-style: normal;
 }
 
-
-header {
-    height: 4.5rem;
-    background-color: var(--clr-accent-800);
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--clr-accent-700);
+    width: 100%;
+    
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    transition: width 0.3s ease-in-out; 
+}
+
+@media screen and (max-width: 1400px) {
+    header {
+        width: 100%; 
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+
+.logo {
+    height: 40px;
+    /*Não tinha outra maneira de alterar a cor. Codepen.io*/
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(309deg) brightness(101%) contrast(102%);
+}
+
+h1 {
+    font-size: var(--fs-900);
+    font-weight: var(--fw-bold);
+}
+
+h2 {
+    width: 79ch;
+    font-size: 0.825rem;
+    font-weight: --fw-light;
+}
+
+.navbar {
+    display: flex;
+    
+}
+
+
+ul.navbar {
+    gap: 0.825rem;
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--clr-neutral-100);
+}
+
+button {
+    margin-left: 50px;
+    padding: 5px;
+    border-radius: 20px;
+    width: 130px;
+}
+
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    margin-top: 7rem;
+    padding: 0.2rem;
+    color: var(--clr-neutral-100);
+    width: clamp(500px, 85vw, 100%);
+}
