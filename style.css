@@ -23,29 +23,14 @@
     font-style: normal;
 }
 
-.main-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--clr-accent-700);
-    width: 100%;
-    max-width: 100vw;
-}
 
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 1rem 0 1rem 0;
-    width: 100%;
-    max-width: 97vw;
-    transition: width 0.3s ease-in-out;
-}
-
-.logo {
-    height: 40px;
-    max-height: 3rem;
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(309deg) brightness(101%) contrast(102%);
+    align-items: center; 
+    max-width: 980px;
+    padding: 1rem 0 0 0;
+    width: 100%; 
 }
 
 h1 {
@@ -53,20 +38,42 @@ h1 {
     font-weight: var(--fw-regular);
 }
 
-.hero-subtitle, .job-description {
-    width: 100%;
-    max-width: 50rem;
-    font-size: var(--fs-300);
-    font-weight: var(--fw-light);
-    word-wrap: break-word;
-}
 
 nav {
     display: flex;
-    justify-content: space-between; 
+    align-items: center;
     gap: 4rem; 
     color: var(--clr-neutral-100);
+    
+}
+
+
+button {
+    padding: 0.5rem;
+    border-radius: 2rem;
+    width: 9rem; 
+    height: 35px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    background-color: var(--clr-accent-700);
+
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: var(--clr-neutral-100);
+}
+
+.logo {
+    height: 40px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(309deg) brightness(101%) contrast(102%);
 }
 
 ul.navbar {
@@ -76,26 +83,20 @@ ul.navbar {
     padding: 0;
 }
 
-button {
-    margin-left: auto; 
-    padding: 0.5rem;
-    border-radius: 2rem;
-    width: 9rem; 
-    height: 35px;
-}
 
-section {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem; 
+
+
+.hero {
     margin-top: 8rem;
-    color: var(--clr-neutral-100);
-    width: 100%;
-    max-width: 95vw; 
 }
 
 
-
+.hero-subtitle, .job-description {
+    max-width: 50rem;
+    font-size: var(--fs-300);
+    font-weight: var(--fw-light);
+    word-wrap: wrap;
+}
 
 
 .joblist {
@@ -112,13 +113,7 @@ section {
 .job-details {
     display: flex;
     height: 7rem;
-    
 }
-
-
-
-
-
 
 .imagefiller {
     background-color: rebeccapurple;
@@ -137,10 +132,27 @@ section {
 
 
 .who-are-we {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     height: 50rem;
     background-color: var(--clr-accent-400);
     border-radius: 0 100px 0 100px;
     z-index: 2;
+}
+
+.who-are-we-container {
+    line-height: 2rem;
+    height: 200px;
+    color: white;
+    width: 320px;
+}
+
+.who-are-we-graphics {
+    height: 500px;
+    width: 500px;
+    background-color: red;
 }
 
 .join-us {
