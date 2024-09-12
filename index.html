@@ -53,7 +53,7 @@
                 </div>
             </section>
         </div>
-
+        <div class="imagefiller"></div>
         <section class="life-at-premium">
             <div class="who-are-we">
                 <div class="who-are-we-container">
@@ -67,18 +67,76 @@
 
         <section class="join-us">
             <div class="join-us-container">
+                <div class="recruiter">
                 <h2>Looking to join our team and work together?</h2>
                 <div class="recruiter-tiago">
-                    <img src="tiago.jpg" alt="Tiago" class="image-tiago">
+                    <img src="" alt="Tiago Santos" class="image-tiago">
                     <div class="welcoming">
                         <h3>Say hi to Tiago</h3>
                         <p>Or email us at <a href="mailto:joinourteam@pminds.pt">joinourteam@pminds.pt</a></p>
                     </div>
                 </div>
             </div>
-            <div class="form-container"></div>
+            
+            <div class="form-container">
+                <form  class="form">
+                    <h2>Submit Your Details</h2>
+        
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        
+                    <label for="phone">Phone Number (optional)</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+        
+                    <label for="motivation">Share your motivation (optional)</label>
+                    <textarea id="motivation" name="motivation" placeholder="Tell us your motivation..." rows="4"></textarea>
+        
+                    <label for="cv">Upload your CV (optional)</label>
+                    <input type="file" id="cv" name="cv" accept=".doc,.docx,.pdf">
+                    <small>No file selected</small>
+                    <p class="file-info">File number limit: 1<br>
+                    Single file size limit: 10MB<br>
+                    Allowed file types: Word, PDF</p>
+        
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="data-consent" name="data-consent" required>
+                        <label for="data-consent">I accept the processing of personal data</label>
+                    </div>
+        
+                    <button type="submit">Submit</button>
+        
+                    <p class="recaptcha-info">
+                        This site is protected by reCAPTCHA and the Google 
+                        <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a> and
+                        <a href="https://policies.google.com/terms" target="_blank">Terms of Service</a> apply.
+                    </p>
+                </form>
+            </div>
+            </div>
         </section>
+        <div class="imagefiller"></div>
     </section>
+    <section class="where-are-we">
+        <div class="location-info-container">
+            <h2>You're welcome to drop by anytime</h2>
+            <div class="location-info">
+                <p>Av. 5 de Outubro</p>
+                <p>+351 217 817 555</p>
+                <p>hello@pminds.pt</p>
+            </div>
+        </div>
+        <img  class="location-maps">
+    </section>
+    <footer>
+        <div class="footer-container">
+            <img src="" alt="" class="simple-logo">
+            <div class="links"></div>
+            <ul class="social-footer"></ul>
+        </div>
+    </footer>
 </body>
 
 </html>
