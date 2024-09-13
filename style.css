@@ -22,6 +22,7 @@
     margin: 0;
     font-family: "Lexend", sans-serif;
     font-style: normal;
+    text-decoration: none;
     line-height: 1.5rem;
 }
 
@@ -33,6 +34,10 @@ header {
     width: 100%; 
     max-width: 980px;
     padding: 1rem 0 0 0;
+    position: sticky;
+    top: 0;
+
+    z-index: 20;
 
 }
 
@@ -57,11 +62,28 @@ nav {
 
 
 button {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.60);
     border-radius: 2rem;
     min-width: 100px;
     height: 30px;
     font-size: var(--fs-100);
-    margin-left: auto;
+}
+
+input {
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--clr-accent-300);
+    color: var(--clr-neutral-100);
+    height: 3rem;
+}
+
+input::before {
+    position: absolute;
+    background: red;
+    z-index: 10;
+    height: 20px;
+    width: 20px;
 }
 
 .main-container {
@@ -93,8 +115,13 @@ ul.navbar {
     list-style-type: none;
     padding: 0;
     font-size: var(--fs-300);
+    
+
 }
 
+.navbar a {
+    color: var(--clr-neutral-100);
+}
 
 
 .container {
@@ -186,7 +213,6 @@ ul.navbar {
 .join-us {
     display: flex;
     flex-direction: row;
-
     justify-content: center;
     align-items: center;
     gap: 7rem;
@@ -236,13 +262,121 @@ ul.navbar {
 
 
 .form {
+    position: relative;
     max-width: 400px;
     display: flex;
     flex-direction: column;
+}
 
+input {
+    padding-top: 10px;
+    border: none; 
+    outline: none; 
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease; 
+}
+
+.input-container input,
+.input-container textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--clr-accent-300);
+    box-sizing: border-box;
+    font-size: 1rem;
+    color: var(--clr-neutral-100);
+    transition: all 0.3s ease; 
+}
+
+.labels {
+    position: absolute;
+    left: 0;
+    top: 30%;
+    width: 100%;
+    font-size: var(--fs-100);
+    pointer-events: none; 
+    transition: all 0.3s ease; 
+    color: var(--clr-neutral-100); 
+    padding-left: 0.2rem;
+    outline: none;
+    border: none;
+}
+
+.input-container textarea {
+    background: none;
+    width: 100%;
+    outline: none;
+    z-index: 10;
+    padding-top: 1.3rem;
+    
+}
+
+/* Tentar refatorizar - hardcoded.*/
+.textarea-label {
+    top: 10%;
+}
+
+.input-container input:focus + label,
+.input-container textarea:focus + label{
+    font-size: 0.5rem;
+    top:0%;
+}
+
+.input-container input:hover,
+.input-container textarea:hover {
+    background-color: rgb(255, 255, 255, 0.05);
+}
+
+.input-container input:focus,
+.input-container textarea:focus {
+    background-color: rgb(255, 255, 255, 0.10);
 }
 
 
+input[type="file"] {
+    display: none;
+}
+
+input[type="checkbox"] {
+    background-color: none;
+    border: 1px var(--clr-neutral-100);
+    border-radius: 1px;
+    height: 10px;
+}
+
+.file-info {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.check.box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+button.submit {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    right: auto;
+    max-width: 100px;
+    color: var(--clr-accent-500);
+}
+
+
+.recaptcha-info a{
+    color: white;
+    font-size: 0.5rem;
+}
+
+.recaptcha-info {
+    font-size: 0.5rem;
+}
 
 .where-are-we {
     position: relative;

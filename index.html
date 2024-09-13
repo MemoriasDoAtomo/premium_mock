@@ -19,7 +19,7 @@
             </a>
             <nav>
                 <ul class="navbar">
-                    <li><a href="#about-us">About Us</a></li>
+                    <li class="other-pages"><a href="#about-us">About Us</a></li>
                     <li><a href="#success-stories">Success Stories</a></li>
                     <li><a href="#team">Team</a></li>
                     <li><a href="#contacts">Contacts</a></li>
@@ -80,23 +80,31 @@
             
             <div class="form-container">
                 <form  class="form">
-                    <h2>Submit Your Details</h2>
-        
-                    <label for="name">Your Name</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-        
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
-        
-                    <label for="phone">Phone Number (optional)</label>
-                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
-        
-                    <label for="motivation">Share your motivation (optional)</label>
-                    <textarea id="motivation" name="motivation" placeholder="Tell us your motivation..." rows="4"></textarea>
-        
-                    <label for="cv">Upload your CV (optional)</label>
-                    <input type="file" id="cv" name="cv" accept=".doc,.docx,.pdf">
-                    <small>No file selected</small>
+                    <div class="input-container">
+                        <input type="text" id="name" name="name" required>
+                        <label class="labels" for="name">Enter your full name</label>
+                    </div>
+                    
+                    <div class="input-container">
+                        <input type="email" id="email" name="email" required>
+                        <label class="labels" for="email">Enter your email</label>
+                    </div>
+                    
+                    <div class="input-container">
+                        <input type="tel" id="phone" name="phone" >
+                        <label class="labels" for="phone">Enter your phone number</label>
+                    </div>
+                    
+                    <div class="input-container">
+                        <textarea id="motivation" name="motivation" rows="4"></textarea>
+                        <label class="textarea-label labels" for="motivation">Tell us your motivation...</label>
+                    </div>
+                
+                    <div class="upload-files-container">
+                        <label for="cv">Upload your CV (optional)</label>
+                        <input type="file" id="cv" name="cv" accept=".doc,.docx,.pdf">
+                    </div>
+                    
                     <p class="file-info">File number limit: 1<br>
                     Single file size limit: 10MB<br>
                     Allowed file types: Word, PDF</p>
@@ -106,7 +114,7 @@
                         <label for="data-consent">I accept the processing of personal data</label>
                     </div>
         
-                    <button type="submit">Submit</button>
+                    <button class="submit" type="submit">Submit</button>
         
                     <p class="recaptcha-info">
                         This site is protected by reCAPTCHA and the Google 
@@ -134,7 +142,8 @@
         <div class="footer-container">
             <img src="" alt="" class="simple-logo">
             <div class="links"></div>
-            <ul class="social-footer"></ul>
+            <ul class="social-footer">
+            </ul>
         </div>
     </footer>
 </body>
