@@ -172,8 +172,11 @@ ul.navbar {
 
 .imagefiller {
     background-color: rebeccapurple;
-    height: 25rem;
-    width: 100%;
+    max-width: 100%;
+}
+
+.imagefiller img {
+   max-width: 100%;
 }
 
 
