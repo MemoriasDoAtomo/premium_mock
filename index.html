@@ -25,38 +25,60 @@
                     <li><a href="#team">Team</a></li>
                     <li><a href="#contacts">Contacts</a></li>
                     <li><a href="#blog">Blog</a></li>
-                    <li><button>We're Hiring!</button></li>
                 </ul>
+                <button>We're Hiring!</button>
             </nav>
         </header>
-
-        <div class="container">
-            <section class="hero">
-                <h1 class="hero-title">Come work with us!</h1>
-                <p class="hero-subtitle">We love meeting new team players who are passionate, curious, and open to giving feedback. If you share these qualities, you could fit right in!</p>
-            </section>
-
-            <section class="joblist">
-                <div class="job">
-                    <h2 class="job-title">Junior Project Manager</h2>
-                    <div class="job-details">
-                        <h3 class="job-description">We're searching for a Junior Project Manager who is passionate about building valuable software. Someone who possesses a unique blend of business and technical savvy, a big-picture vision, and the drive to make that vision a reality.</h3>
-                        <button class="sign-up">Take a look</button>
+        <section class="hero-container">
+            <div class="container">
+                <section class="hero">
+                    <h1 class="hero-title">Come work with us!</h1>
+                    <p class="hero-subtitle">We love meeting new team players who are passionate, curious, and open to giving feedback. If you share these qualities, you could fit right in!</p>
+                </section>
+                <section class="joblist">
+                    <div class="job">
+                        <h2 class="job-title">DevOps Engineer</h2>
+                        <div class="job-details">
+                            <h3 class="job-description">We're looking for a DevOps Engineer to join our growing team and automate our software development lifecycle.</h3>
+                            <button class="sign-up">Take a look</button>
+                        </div>
                     </div>
-                </div>
-
-                <div class="job">
-                    <h2 class="job-title">Junior Project Manager</h2>
-                    <div class="job-details">
-                        <h3 class="job-description">We're searching for a Junior Project Manager who is passionate about building valuable software. Someone who possesses a unique blend of business and technical savvy, a big-picture vision, and the drive to make that vision a reality.</h3>
-                        <button>Take a look</button>
+                    <div class="job">
+                        <h2 class="job-title">Junior DevOps Engineer</h2>
+                        <div class="job-details">
+                            <h3 class="job-description">Are you passionate about technology and eager to build a career in DevOps?</h3>
+                            <button>Take a look</button>
+                        </div>
                     </div>
-                </div>
-            </section>
-        </div>
+                    <div class="job">
+                        <h2 class="job-title">Software Tester</h2>
+                        <div class="job-details">
+                            <h3 class="job-description">Do you have firm opinions about software? Do you love to break things and find problems? So, we want to know you.</h3>
+                            <button>Take a look</button>
+                        </div>
+                    </div>
+                    <div class="job">
+                        <h2 class="job-title">Spontaneous Application</h2>
+                        <div class="job-details">
+                            <h3 class="job-description">If you think you've got what it takes to join our team, let us know.</h3>
+                            <button>Take a look</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+                <ul class="social-hero">
+                    <p>FOLLOW US</p>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-x-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-github"></i></a></li>
+                </ul>
+        </section>
         <div class="imagefiller">
-            <img src="office-1.png" alt="">
+            <img src="office-1.png" alt="Office Image 1">
         </div>
+
         <section class="life-at-premium">
             <div class="who-are-we">
                 <div class="who-are-we-container">
@@ -71,67 +93,69 @@
         <section class="join-us">
             <div class="join-us-container">
                 <div class="recruiter">
-                <h2>Looking to join our team and work together?</h2>
-                <div class="recruiter-tiago">
-                    <img src="tsantos.webp" alt="Tiago Santos" class="image-tiago">
-                    <div class="welcoming">
-                        <h3>Say hi to Tiago</h3>
-                        <p>Or email us at <a href="mailto:joinourteam@pminds.pt">joinourteam@pminds.pt</a></p>
+                    <h2>Looking to join our team and work together?</h2>
+                    <div class="recruiter-tiago">
+                        <img src="tsantos.webp" alt="Tiago Santos" class="image-tiago">
+                        <div class="welcoming">
+                            <h3>Say hi to Tiago</h3>
+                            <p>Or email us at <a href="mailto:joinourteam@pminds.pt">joinourteam@pminds.pt</a></p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="form-container">
-                <form  class="form">
-                    <div class="input-container">
-                        <input type="text" id="name" name="name" required>
-                        <label class="labels" for="name">Enter your full name</label>
-                    </div>
-                    
-                    <div class="input-container">
-                        <input type="email" id="email" name="email" required>
-                        <label class="labels" for="email">Enter your email</label>
-                    </div>
-                    
-                    <div class="input-container">
-                        <input type="tel" id="phone" name="phone" >
-                        <label class="labels" for="phone">Enter your phone number</label>
-                    </div>
-                    
-                    <div class="input-container">
-                        <textarea id="motivation" name="motivation" rows="4"></textarea>
-                        <label class="textarea-label labels" for="motivation">Tell us your motivation...</label>
-                    </div>
-                
-                    <div class="upload-files-container">
-                        <label for="cv">Upload your CV (optional)</label>
-                        <input type="file" id="cv" name="cv" accept=".doc,.docx,.pdf">
-                    </div>
-                    
-                    <p class="file-info">File number limit: 1<br>
-                    Single file size limit: 10MB<br>
-                    Allowed file types: Word, PDF</p>
-        
-                    <div class="checkbox-container">
-                        <input type="checkbox" id="data-consent" name="data-consent" required>
-                        <label for="data-consent">I accept the processing of personal data</label>
-                    </div>
-        
-                    <button class="submit" type="submit">Submit</button>
-        
-                    <p class="recaptcha-info">
-                        This site is protected by reCAPTCHA and the Google 
-                        <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a> and
-                        <a href="https://policies.google.com/terms" target="_blank">Terms of Service</a> apply.
-                    </p>
-                </form>
-            </div>
+
+                <div class="form-container">
+                    <form class="form">
+                        <div class="input-container">
+                            <input type="text" id="name" name="name" required>
+                            <label class="labels" for="name">Enter your full name</label>
+                        </div>
+
+                        <div class="input-container">
+                            <input type="email" id="email" name="email" required>
+                            <label class="labels" for="email">Enter your email</label>
+                        </div>
+
+                        <div class="input-container">
+                            <input type="tel" id="phone" name="phone">
+                            <label class="labels" for="phone">Enter your phone number</label>
+                        </div>
+
+                        <div class="input-container">
+                            <textarea id="motivation" name="motivation" rows="4"></textarea>
+                            <label class="textarea-label labels" for="motivation">Tell us your motivation...</label>
+                        </div>
+
+                        <div class="upload-files-container">
+                            <label for="cv">Upload your CV (optional)</label>
+                            <input type="file" id="cv" name="cv" accept=".doc,.docx,.pdf">
+                        </div>
+
+                        <p class="file-info">File number limit: 1<br>
+                            Single file size limit: 10MB<br>
+                            Allowed file types: Word, PDF</p>
+
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="data-consent" name="data-consent" required>
+                            <label for="data-consent">I accept the processing of personal data</label>
+                        </div>
+
+                        <button class="submit" type="submit">Submit</button>
+
+                        <p class="recaptcha-info">
+                            This site is protected by reCAPTCHA and the Google 
+                            <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a> and
+                            <a href="https://policies.google.com/terms" target="_blank">Terms of Service</a> apply.
+                        </p>
+                    </form>
+                </div>
             </div>
         </section>
+
         <div class="imagefiller">
-            <img src="office-2.png" alt="">
+            <img src="office-2.png" alt="Office Image 2">
         </div>
     </section>
+
     <section class="where-are-we">
         <div class="location-info-container">
             <h2>You're welcome to drop by anytime!</h2>
@@ -141,8 +165,9 @@
                 <p>hello@pminds.pt</p>
             </div>
         </div>
-        <img  class="location-maps">
+        <img class="location-maps" src="map-placeholder.png" alt="Map Location">
     </section>
+
     <footer>
         <div class="footer-container">
             <img src="logosimples.svg" alt="Site Logo" class="logo-simples">
@@ -165,14 +190,15 @@
                         <li><a href="#">After College Experience</a></li>
                     </ul>
                 </div>
+            </div>
+            <ul class="social-footer">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fab fa-x-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-github"></i></a></li>
+            </ul>
         </div>
-        <ul class="social-footer">
-            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-            <li><a href="#"><i class="fab fa-x-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fab fa-github"></i></a></li>
-        </ul>
     </footer>
 </body>
 
