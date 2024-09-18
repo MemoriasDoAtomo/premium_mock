@@ -12,7 +12,7 @@
 :root {
     --clr-neutral-100: hsl(0, 0%, 100%);
     
-    --clr-accent-800: hsl(213, 80%, 23%);
+    --clr-accent-800: hsl(213, 66.2%, 13.9%);
     --clr-accent-700: hsl(235, 42%, 26%);
     --clr-accent-500: hsl(235, 47%, 40%);
     --clr-accent-400: hsl(235, 61%, 57%);
@@ -259,7 +259,7 @@ ul.navbar {
 .imagefiller {
     z-index: 0;
     width: 100%;
-    height: 50rem;
+    height: 40rem;
     overflow: hidden;
 
 }
@@ -268,7 +268,7 @@ ul.navbar {
     z-index: 0;
     max-width: 100%;
     translate: 0px -100px;
-    scale: 1.8;
+    scale: 1.2;
 }
 
 .life-at-premium {
@@ -519,16 +519,15 @@ button.submit {
     flex-direction: row;
     justify-content: flex-end; 
     align-items: center;
-    height: 350px;
+    height: 450px;
     width: 100%; 
-    max-width: 980px;
+    max-width: 1400px;
     background-color: var(--clr-accent-500);
-    margin-top: -175px;
-    margin-bottom: -175px;
+    margin-top: -225px;
+    margin-bottom: -225px;
     z-index: 1; 
     top: 50%;   
     left: 50%;  
-    transform: translate(-50%, 0);
     border-radius: 10px 0px 50px 10px;
     padding-left: 30px;
 }
@@ -575,7 +574,7 @@ footer {
     justify-content: space-evenly;
     height: 500px;
     width: 100%; 
-    max-width: 980px;
+    max-width: 1400px;
     
     border-bottom: 1px solid var(--clr-accent-300);
     margin-top: 14rem;
