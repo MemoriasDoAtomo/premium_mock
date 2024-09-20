@@ -1,0 +1,7 @@
+1. Terminar Estilos
+2. Navbar - Tirar botão e colocar na lista;
+3. Social - Follow us e os restantes icons
+4. Responsive
+5. Classes invés de Selectores e terem todos com hifens
+6. Passar pelo validador;
+7. SCSS a funcionar - watch reload;

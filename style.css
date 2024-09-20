@@ -5,6 +5,7 @@
     font-style: normal;
     text-decoration: none;
     line-height: 1.5rem;
+    list-style-type: none;
 }
 
 
@@ -12,38 +13,29 @@
 :root {
     --clr-neutral-100: hsl(0, 0%, 100%);
     
-    --clr-accent-800: hsl(213, 66.2%, 13.9%);
-    --clr-accent-700: hsl(235, 42%, 26%);
+    --clr-accent-800: rgb(12, 33, 59);
+    --clr-accent-700: rgb(38, 43, 94);
     --clr-accent-500: hsl(235, 47%, 40%);
     --clr-accent-400: hsl(235, 61%, 57%);
     --clr-accent-300: hsl(235, 63%, 61%);
 
     --fw-light: 300;
-    --fw-regular: 400;
+    --fw-regular: 500;
     --fw-bold: 800;
 
     --fs-100: 0.65rem;
     --fs-300: 0.825rem;
     --fs-350: 1rem;
+    --fs-375: 1.25rem;
     --fs-400: 1.5rem;
     --fs-450: 1.75rem;
     --fs-500: 2rem;
     --fs-600: 2.5rem;
     --fs-900: 5vw;
+
+    --cw-max: 1320px;
+    --cw-medium: 992px;
 }
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-    width: 100%; 
-    max-width: 1400px;
-    padding: 1.2rem;
-    top: 0;
-    z-index: 1000;
-}
-
-
 
 h1 {
     font-size: clamp(2.5rem, 5vw, 2.75rem); 
@@ -53,15 +45,6 @@ h1 {
 h2 {
     font-size: var(--fs-450);
     font-weight: var(--fw-regular);
-}
-
-
-nav {
-    display: flex;
-    align-items: center;
-    gap: 4rem; 
-    color: var(--clr-neutral-100);
-    
 }
 
 
@@ -118,55 +101,49 @@ section {
     max-width: 1400px;
 }
 
-
-@media (max-width: 768px) {
-    .job-details{
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: end;
-    }
-
-
-  }
-
-  @media (max-width: 972px) {
-    nav {
-        display: none;
-    }
-  }
-
-
-
-
-
-.logo {
-    height: 47px;
-    z-index: 1001;
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(309deg) brightness(101%) contrast(102%);
-    animation: change-color-logo 1s linear both;
-    animation-timeline: scroll(); 
-    
+/*-------------------------------HEADER-----------------------------------*/
+.main-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    width: 100%; 
+    max-width: 1320px;
+    padding: 20px 8px 0px 8px;
 }
 
+.logo {
+    scale: 1.25;
+}
 
-
-
-ul.navbar {
+.navbar {
     display: flex;
     align-items: center;
-    gap: 2.5rem;
-    margin-right: 1rem;
-    list-style-type: none;
-    padding: 0;
+    justify-content: center;
+    gap: 2.25rem;
+    font-weight: var(--fw-regular);
     font-size: var(--fs-350);
-    
-
 }
 
 .navbar a {
     color: var(--clr-neutral-100);
 }
 
+.we-are-hiring {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 37px;
+    width: 146px;
+    border-radius: 20px;
+    background-color: var(--clr-neutral-100);
+    color: black;
+    margin-left: 56px;
+}
+
+.we-are-hiring a{
+    color: var(--clr-accent-800);
+    font-size: var(--fs-300);
+}
 
 .hero-container {
     display: flex;
@@ -265,7 +242,7 @@ ul.navbar {
 
 .imagefiller img {
     z-index: 0;
-    max-width: 100%;
+    width: 100%;
     translate: 0px -100px;
     scale: 1.2;
 }
@@ -665,3 +642,64 @@ footer {
     height: 50px;
     margin-right: auto;
 }
+
+
+
+
+
+.hexagon-wrapper {
+    position: absolute;
+    width: 100%; /* Set the desired container width */
+    height: 800px; /* Set the desired container height */
+    overflow: hidden; /* Hide overflow of the hexagon */
+  }
+  
+  .hexagon {
+    position: absolute;
+    height: 800px;
+    width: 800px;
+    background-color: var(--clr-accent-500);
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    z-index: 0;
+    transform: translate(320px, -450px ) rotate(15deg); /* You can combine the transformations */
+  }
+
+  .second {
+    background-color: var(--clr-accent-500);
+    transform: translate(1040px, -225px ) rotate(-15deg);
+    height: 650px;
+    width: 650px;
+  }
+
+  .third {
+    background-color: var(--clr-accent-500);
+    transform: translate(1650px, -275px ) rotate(-15deg);
+    height: 650px;
+    width: 650px;
+  }
+
+  .fourth {
+    background-color: yellow;
+    transform: translate(350px, -550px ) rotate(-15deg);
+    height: 200px;
+    width: 200px;
+
+  }
+
+
+
+
+  @media (max-width: 768px) {
+    .job-details{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: end;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .navbar,
+    .social-hero {
+        display: none;
+    }
+  }
